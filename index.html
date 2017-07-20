@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ListManipulator</title>
+    <style>
+        textarea{
+            min-height: 30em;
+            min-width: 90%;
+            resize: none;
+        }
+        #terminal{
+            min-width: 85%;
+        }
+        #submit{
+            min-width: 5%;
+        }
+
+    </style>
+</head>
+<body>
+<textarea id="textarea" disabled></textarea>
+<input type="text" id="terminal">
+<button id="submit">&crarr;</button>
+<script data-main="./terminal.js" src="node_modules/requirejs/require.js">
+</script>
+</body>
+</html>
