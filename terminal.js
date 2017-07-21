@@ -1,7 +1,8 @@
-define(['./modules/append','./modules/delete'],function(appendModule,deleteModule){
+define(['./modules/append','./modules/delete','./modules/prepend'],function(appendModule,deleteModule,prependModule){
 
     let functions = {
         append: appendModule,
+        prepend: prependModule,
         delete: deleteModule
     };
     let textField = document.getElementById('textarea');
