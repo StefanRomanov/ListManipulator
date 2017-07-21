@@ -1,7 +1,8 @@
-define(['./modules/append','./modules/delete', './modules/reverse'],function(appendModule,deleteModule,reverseModule){
+define(['./modules/append','./modules/delete','./modules/prepend', './modules/reverse'],function(appendModule,deleteModule,prependModule,reverseModule){
 
     let functions = {
         append: appendModule,
+        prepend: prependModule,
         delete: deleteModule,
         reverse: reverseModule
     };
