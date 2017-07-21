@@ -1,4 +1,4 @@
-define(['./append','./delete'],function(appendModule,deleteModule){
+define(['./modules/append','./modules/delete'],function(appendModule,deleteModule){
 
     let functions = {
         append: appendModule,
