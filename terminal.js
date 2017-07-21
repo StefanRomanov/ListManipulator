@@ -1,8 +1,9 @@
-define(['./modules/append','./modules/delete'],function(appendModule,deleteModule){
+define(['./modules/append','./modules/delete', './modules/reverse'],function(appendModule,deleteModule,reverseModule){
 
     let functions = {
         append: appendModule,
-        delete: deleteModule
+        delete: deleteModule,
+        reverse: reverseModule
     };
     let textField = document.getElementById('textarea');
     let terminal = document.getElementById('terminal');

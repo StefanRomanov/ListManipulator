@@ -1,5 +1,5 @@
 define([],function (){
-    return function append(element,list,textField){
+    return function append(element, list, textField){
         if(element.length !== 1 ){
             throw new Error('Error: invalid command parameters')
         }
