@@ -1,10 +1,11 @@
-define(['./modules/append','./modules/delete','./modules/prepend', './modules/reverse'],function(appendModule,deleteModule,prependModule,reverseModule){
+define(['./modules/append','./modules/delete','./modules/prepend', './modules/reverse', './modules/end'],function(appendModule,deleteModule,prependModule,reverseModule,endModule){
 
     let functions = {
         append: appendModule,
         prepend: prependModule,
         delete: deleteModule,
-        reverse: reverseModule
+        reverse: reverseModule,
+        end: endModule
     };
     let textField = document.getElementById('textarea');
     let terminal = document.getElementById('terminal');
