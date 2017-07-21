@@ -23,16 +23,16 @@ define(['./modules/append','./modules/delete'],function(appendModule,deleteModul
             initialized = true;
             return
         }
-         try {
+        try {
             functions[tokens[0]](tokens.slice(1),list,textField);
-         } catch (err){
+        } catch (err){
             if(err.message === 'functions[tokens[0]] is not a function'){
                 textField.value += 'Error: invalid command\n';
             } else {
                 textField.value += err.message + "\n";
             }
-         } finally {
-             terminal.value = "";
-         }
+        } finally {
+            terminal.value = "";
+        }
     }
 });
