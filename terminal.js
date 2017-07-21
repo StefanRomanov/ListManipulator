@@ -1,10 +1,12 @@
-define(['./modules/append','./modules/delete','./modules/prepend', './modules/reverse', './modules/count','./modules/sort', './modules/end'],function(appendModule,deleteModule,prependModule,reverseModule,countModule,sortModule,endModule){
+define(['./modules/append','./modules/delete','./modules/prepend', './modules/reverse', './modules/count','./modules/sort', './modules/end','./modules/insert']
+    ,function(appendModule,deleteModule,prependModule,reverseModule,countModule,sortModule,endModule,insertModule){
 
     let functions = {
         append: appendModule,
         prepend: prependModule,
         delete: deleteModule,
         reverse: reverseModule,
+        insert: insertModule,
         count:countModule,
         sort: sortModule,
         end: endModule
